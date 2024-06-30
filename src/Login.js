@@ -24,9 +24,9 @@ function Login({ onSignUpClick }) {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmitFun)} className="bg-dynamicBg bg-cover bg-center bg-blend-overlay bg-slate-400 fadebg text-white font-bold w-fit mx-auto my-20 px-10 py-20 rounded-xl shadow-2xl shadow-black ">
-      <div id="login" className="flex flex-col gap-4 sm:gap-6 items-center justify-center">
-        <h1 className="text-[2em] sm:text-[2.5em]">Student Login Form</h1>
+    <form onSubmit={handleSubmit(onSubmitFun)} className="bg-dynamicBg bg-cover bg-center bg-blend-overlay bg-slate-400 fadebg text-white font-bold w-fit mx-auto my-20 py-20 rounded-xl shadow-2xl shadow-black ">
+      <div id="login" className="flex flex-col gap-4 sm:gap-6 items-center justify-center mx-auto w-fit px-2">
+        <h1 className="text-[2em] sm:text-[2.5em] text-center">Student Login Form</h1>
         <input
           type="email"
           id="email"
@@ -41,7 +41,7 @@ function Login({ onSignUpClick }) {
           {...register("password")}
           className="px-5 py-3 rounded-2xl outline-none text-black sm:text-[1.2em]"
         />
-        <input type={"submit"} id="submit" className="px-5 py-3 rounded-2xl bg-black text-orange-600 sm:text-[1.2em]" />
+        <input type={"submit"} id="submit" className="px-5 py-3 rounded-2xl bg-black text-orange-600 hover:bg-orange-600 hover:text-white sm:text-[1.2em]" />
         <p>
           Don't have an account?{" "}
           <a href="#" onClick={onSignUpClick} className="text-orange-600 underline" >
